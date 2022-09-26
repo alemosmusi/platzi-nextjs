@@ -5,7 +5,7 @@ import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader'
 import ProductList from '@components/ProductList/ProductList'
 
 
-export const getServerSIdeProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch ('https://platzi-nextjs-anb5.vercel.app/api/avo')
   const {data:productlist} : TAPIAvoResponse = await response.json()
 
